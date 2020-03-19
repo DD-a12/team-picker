@@ -1,0 +1,19 @@
+<%- include( "./partials/header" )%>
+
+    <form method="POST" action="/new_cohort">
+        <div> 
+            <label for="teamname">Teamname</label>
+            <input type="text" class="form-control" id="teamname" name="teamname">
+        </div>
+        <div> 
+            <label for="logoUrl">Logo Url</label>
+            <input type="text" class="form-control" id="logoUrl" name="logoUrl">
+        </div>
+        <div> 
+            <label for="members">Members</label>
+            <input type="text" class="form-control" id="members" name="members">
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+<%- include( "./partials/footer" )%>

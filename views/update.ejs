@@ -1,0 +1,23 @@
+<%- include( "./partials/header" )%>
+
+    <form method="POST" action="/cohorts/<%= cohort.id %>/update">
+        <input type="hidden" name="_method" value="PUT" >
+        <div> 
+            <label for="teamName">Teamname</label>
+            <input type="text" class="form-control" id="teaName" 
+            value="<%=cohort.teamName%>" name="teamName">
+        </div>
+        <div> 
+            <label for="imageUrl">Logo Url</label>
+            <input type="text" class="form-control" 
+            value="<%= cohort.imageUrl %>" id="imageUrl" name="imageUrl">
+        </div>
+        <div> 
+            <label for="members">Members</label>
+            <input type="text" class="form-control" 
+            value="<%= cohort.members  %>" id="members" name="members">
+        </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+
+<%- include( "./partials/footer" )%>
